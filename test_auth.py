@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-cred = credentials.Certificate("config/tip-tours-df5b5-firebase-adminsdk-659l9-e5b2e8dd16.json")  # Replace with your service account key path
+cred = credentials.Certificate("tip-tours-df5b5-firebase-adminsdk-659l9-e5b2e8dd16.json")  # Replace with your service account key path
 firebase_admin.initialize_app(cred)
 
 def verify_token(id_token):
